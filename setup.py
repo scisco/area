@@ -19,7 +19,6 @@ setup(name='area',
       description="Calculate the area inside of any GeoJSON geometry. This is a port of Mapbox's" +
                   "geojson-area for Python",
       long_description=readme,
-      classifiers=[],
       keywords='geojson area geometry',
       author='Alireza J (Scisco)',
       author_email='scisco7@gmail.com',
