@@ -1,18 +1,17 @@
 language: python
-
 python:
 - '2.6'
 - '2.7'
 - '3.3'
 - '3.4'
 - '3.5'
-
 script:
 - python test.py
-
 deploy:
   provider: pypi
   user: scisco
+  password:
+    secure: D1NAhQ3N3B9M+RFOYg3cehBP1P5RQiHRpDVQLjVJq1a2AOvmUYXYUL14SHDK9VI0HswyXRIZXIJuG7UUoQxkq4GVudPzdjnP/y5y8s8LBf8CwsTPFIYMOpo/yypU1tDon3CAMv9vti0TKBfbRP1HsY8AfoNta7ZOFKhx0FLgvCDqnLUQatBkz9kiOh+y8gSnnTw5sCunO0XSA+JWvhT9RjWfPBzX5lzT/EJTCM9CtlNZlh1lrZly+mgSiuupsmoMQBlHlK0YWoNouDS356S/QqWPpVRYr9Ikwwyuk++4MqmXNIQ5tmj+eRdA/hkf8STiJHhdCRmBFNJlEO2xn3kLJVdpOJed+81kl9tLtPWuOzdknaNGF9MVheKGE+C7bf0ACv7LAZkzWvbk/35G/7tNalEWZHCcPNBpGuMj4YIDlaRKungxR2Cjot/LKPKrbogKtQEfQIRT/ndTugrjzblXbSCUIoMI1UKve6NL9JXu/YylffcIGmhXt9WPidSQ7MWh+sJFwdylXgPRLViJHA4eBTwFl5qtesNVJWuOmzRZ+ucYkXOe2kCKtrSU0qMxgGm2ta351/KJXv3DAW3I8AaKWF93PAGcnRLpfXvrxSVSebF7nhHrPmKNL4Y28Oa75OddnpLWUoBGk8yaB3qw9Vkk1R+e8VXf2v2c/BDTc3wxbEs=
   on:
     repo: scisco/area
     branch: master
