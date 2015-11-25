@@ -1,0 +1,17 @@
+language: python
+
+python:
+- '2.6'
+- '2.7'
+- '3.3'
+- '3.4'
+
+script:
+- python test.py
+
+deploy:
+  provider: pypi
+  user: scisco
+  on:
+    repo: scisco/area
+    branch: master
