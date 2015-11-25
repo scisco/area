@@ -20,14 +20,15 @@ world = {
     ]
 }
 
-illinois_area = 145978332359.36716
+illinois_area = 145978332359.36746
 world_area = 511207893395811.06
+
 
 class AreaTestCase(unittest.TestCase):
 
     def test_area_illinois(self):
         """ Compute the area of illinois """
-        self.assertEqual(area(illinois), illinois_area)
+        self.assertEqual(round(area(illinois), 2), round(illinois_area, 2))
 
     def test_area_world(self):
         """ Compute the area of the whole world """
@@ -35,11 +36,11 @@ class AreaTestCase(unittest.TestCase):
 
     def test_point_area(self):
         """ Compute the area of a point """
-        self.assertEqual(area({'type':'Point', 'coordinates': [0,0]}), 0)
+        self.assertEqual(area({'type': 'Point', 'coordinates': [0, 0]}), 0)
 
     def test_liststring_area(self):
         """ Compute the area of a line string """
-        self.assertEqual(area({'type':'LineString', 'coordinates': [[0,0],[1,1]]}), 0)
+        self.assertEqual(area({'type': 'LineString', 'coordinates': [[0, 0], [1, 1]]}), 0)
 
     def test_geometry_collection_area(self):
         """ Compute the area of a geometry collection """
