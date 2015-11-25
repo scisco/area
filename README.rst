@@ -12,7 +12,7 @@ geojson-area
     :alt: License
 
 
-Calculate the area inside of any [GeoJSON](http://geojson.org/) geometry. This is a port of Mapbox's [geojson-area](https://github.com/mapbox/geojson-area) for Python.
+Calculate the area inside of any `GeoJSON <http://geojson.org/>`_ geometry. This is a port of Mapbox's `geojson-area <https://github.com/mapbox/geojson-area>`_ for Python.
 
 Installation
 ------------
@@ -35,4 +35,4 @@ Usage
 Credit
 ------
 
-- [geojson-area](https://github.com/mapbox/geojson-area)
+- `geojson-area <https://github.com/mapbox/geojson-area>`_
