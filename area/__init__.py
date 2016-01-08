@@ -1,7 +1,9 @@
 from __future__ import division
+
+import json
 from math import pi, sin
 
-__version__ = '1.0.0'
+__version__ = '1.1.0'
 WGS84_RADIUS = 6378137
 
 
@@ -71,6 +73,9 @@ def polygon__area(coordinates):
 
 
 def area(geometry):
+
+    if isinstance(geometry, str):
+        geometry = json.loads(geometry)
 
     assert isinstance(geometry, dict)
 

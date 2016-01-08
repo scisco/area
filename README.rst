@@ -21,12 +21,21 @@ Installation
 Usage
 -----
 
+Simply pass a geojson string or python dictionary to the area function and get the area.
+
 .. code::
 
   >>> from area import area
   >>> obj = {'type':'Polygon','coordinates':[[[-180,-90],[-180,90],[180,90],[180,-90],[-180,-90]]]}
   >>> area(obj)
   511207893395811.06
+
+Test
+----
+
+.. code::
+
+  $ python test.py
 
 
 Credit

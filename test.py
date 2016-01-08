@@ -26,6 +26,14 @@ world_area = 511207893395811.06
 
 class AreaTestCase(unittest.TestCase):
 
+    def test_area_illinois_with_string(self):
+        """ Computer the area of illinois with string input """
+
+        # Go the top of the file
+        f.seek(0)
+        illinois = f.read()
+        self.assertEqual(round(area(illinois), 2), round(illinois_area, 2))
+
     def test_area_illinois(self):
         """ Compute the area of illinois """
         self.assertEqual(round(area(illinois), 2), round(illinois_area, 2))
