@@ -3,7 +3,7 @@ from __future__ import division
 import json
 from math import pi, sin
 
-__version__ = '1.1.0'
+__version__ = '1.1.1'
 WGS84_RADIUS = 6378137
 
 
