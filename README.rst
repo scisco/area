@@ -1,7 +1,7 @@
 geojson-area
 ============
 
-.. image:: https://travis-ci.org/scisco/area.svg?branch=develop
+.. image:: https://travis-ci.org/scisco/area.svg?branch=master
     :target: https://travis-ci.org/scisco/area
 
 .. image:: https://badge.fury.io/py/area.svg
