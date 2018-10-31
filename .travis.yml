@@ -15,3 +15,5 @@ deploy:
   on:
     repo: scisco/area
     branch: master
+    python: '3.4'
+    tags: true
