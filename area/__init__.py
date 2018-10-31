@@ -3,7 +3,7 @@ from __future__ import division
 import json
 from math import pi, sin
 
-__version__ = '1.1.0'
+__version__ = '1.1.1'
 WGS84_RADIUS = 6378137
 
 
@@ -27,7 +27,7 @@ def ring__area(coordinates):
     {float} The approximate signed geodesic _area of the polygon in square meters.
     """
 
-    assert isinstance(coordinates, list)
+    assert isinstance(coordinates, (list, tuple))
 
     _area = 0
     coordinates_length = len(coordinates)
@@ -60,7 +60,7 @@ def ring__area(coordinates):
 
 def polygon__area(coordinates):
 
-    assert isinstance(coordinates, list)
+    assert isinstance(coordinates, (list, tuple))
 
     _area = 0
     if len(coordinates) > 0:
